@@ -181,6 +181,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\about.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\contact.html" />
     <Content Include="Content\dummy\bbs-logo%402x.png" />
     <Content Include="Content\dummy\bbs-logo.png" />
@@ -397,6 +401,10 @@
     <Content Include="Content\__MACOSX\sass\libs\bootstrap-grid\.__grid.scss" />
     <Content Include="Content\__MACOSX\sass\libs\bootstrap-grid\.__mixins.scss" />
     <Content Include="Content\__MACOSX\sass\libs\bootstrap-grid\.__settings.scss" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -436,6 +444,13 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\_MyLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Insurance.cshtml" />
+    <Content Include="Views\Home\Resource.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
