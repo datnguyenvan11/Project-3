@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Project_Sem_3.Models.InsurancePackage>
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>View</h2>
+
+
+
+<form action="/MotorCart/AddCart" method="post">
+    @foreach (var item in Model)
+    {
+        <input type="radio" id="age3" name="insurancePackageId" value="@item.Id">
+        <label for="age3">@item.Name</label><br><br>
+    }
+    <input type="text" name="CarOwner" value="" />
+    <input type="text" name="RegisteredAddress" value="" />
+    <input type="text" name="LicensePlate" value="" />
+    <input type="text" name="ChassisNumber" value="" />
+    <input type="datetime" name="Duration" value="" />
+    <input type="hidden" name="quantity" value="1" />
+    <input type="submit" value="dasdasdas" />
+</form>
+
+
