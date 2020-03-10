@@ -1,0 +1,21 @@
+﻿@using Project_Sem_3.Models
+
+@{
+    ViewBag.Title = "GetParameter";
+    var cart = ViewBag.shoppingCart as MotorShopingCart;
+}
+
+<h2>Shopping Cart</h2>
+<ul>
+    @foreach (var item in cart.GetCartItems())
+    {
+        <li>
+            @item.Value.InsurancePackageName - @item.Value.Quantity - @item.Value.Price <a onclick="return confirm('Ban co chac muon xoa san pham tuyet voi cua chung toi ra khoi gio hang khong.')" href="/ShoppingCart/RemoveCart?productId=@item.Value.InsurancePackageId">Remove</a>
+        </li>
+    }
+    </ul>
+    <b>Total price: @cart.GetTotalPrice()</b>
+    @foreach (var item in cart.GetCartItems())
+    {
+        @Html.ActionLink("Admin", "Createrder", "MotorCart", new { InsurancePackageId = @item.Value.InsurancePackageId }, null)
+    }
